@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 16px;
+}
+
+body {
+  background-color: #ffffff;
+  background-image:  linear-gradient(30deg, #ffced9 12%, transparent 12.5%, transparent 87%, #ffced9 87.5%, #ffced9), linear-gradient(150deg, #ffced9 12%, transparent 12.5%, transparent 87%, #ffced9 87.5%, #ffced9), linear-gradient(30deg, #ffced9 12%, transparent 12.5%, transparent 87%, #ffced9 87.5%, #ffced9), linear-gradient(150deg, #ffced9 12%, transparent 12.5%, transparent 87%, #ffced9 87.5%, #ffced9), linear-gradient(60deg, #ffced977 25%, transparent 25.5%, transparent 75%, #ffced977 75%, #ffced977), linear-gradient(60deg, #ffced977 25%, transparent 25.5%, transparent 75%, #ffced977 75%, #ffced977);
+  background-size: 20px 35px;
+  background-position: 0 0, 0 0, 10px 18px, 10px 18px, 0 0, 10px 18px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Work Sans', sans-serif;
+}
+
+#root {
+  width: 100%;
+}
+
+@media screen and (max-width: 60rem){ /* 950px */
+  :root {
+    font-size: 14px;
+  }
+}

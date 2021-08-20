@@ -1,6 +1,30 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react';
+import { Helmet } from 'react-helmet';
 
-import App from "./App";
+// Componenetes
+import Formulario from './componentes/Formulario';
 
-ReactDOM.render(<App />, document.getElementById("root"));
+// Elementos
+import { Header, Titulo, ContenedorHeader } from './elementos/Header';
+import BotonCerrarSesion from './elementos/BotonCerrarSesion';
+
+function App() {
+  return (
+    <>
+      <Helmet>
+        <title>Agregar Producto</title>
+      </Helmet>
+
+      <Header>
+        <ContenedorHeader>
+          <Titulo>Agregar Producto</Titulo>
+          <BotonCerrarSesion />
+        </ContenedorHeader>
+      </Header>
+
+      <Formulario />
+    </>
+  );
+}
+
+export default App;

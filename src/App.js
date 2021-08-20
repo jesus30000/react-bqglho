@@ -1,11 +1,30 @@
-import React from "react";
-import "./style.css";
+import React from 'react';
+import { Helmet } from 'react-helmet';
 
-export default function App() {
+// Componenetes
+import Formulario from './componentes/Formulario';
+
+// Elementos
+import { Header, Titulo, ContenedorHeader } from './elementos/Header';
+import BotonCerrarSesion from './elementos/BotonCerrarSesion';
+
+function App() {
   return (
-    <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
-    </div>
+    <>
+      <Helmet>
+        <title>Agregar Producto</title>
+      </Helmet>
+
+      <Header>
+        <ContenedorHeader>
+          <Titulo>Agregar Producto</Titulo>
+          <BotonCerrarSesion />
+        </ContenedorHeader>
+      </Header>
+
+      <Formulario />
+    </>
   );
 }
+
+export default App;
