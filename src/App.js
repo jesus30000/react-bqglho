@@ -21,7 +21,6 @@ function App() {
           <BotonCerrarSesion />
         </ContenedorHeader>
       </Header>
-
       <Formulario />
     </>
   );
