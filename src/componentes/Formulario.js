@@ -8,7 +8,7 @@ import {SelectorImg, Selector, SelectorLabel, SelectorContenedor, ContenedorUrl}
 
 // Img
 import { ReactComponent as IconoPlus } from '../img/plus.svg';
-import SinImagen from '../img/sin-imagen.jpg';
+//import SinImagen from '../img/sin-imagen.jpg';
 
 // firebase
 import agregarProducto from '../firebase/agregarProducto';
